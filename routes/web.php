@@ -20,3 +20,6 @@ Route::get('/', function () {
 });
 
 Route::get('/home', [\App\Http\Controllers\AdminController::class, 'index'])->name('home');
+Route::get('/pasien', [\App\Http\Controllers\PasienController::class, 'index'])->name('pasien');
+Route::get('/pemeriksaanPenunjang', [\App\Http\Controllers\pemeriksaanPenunjangController::class, 'index'])->name('pemeriksaanPenunjang');
+
